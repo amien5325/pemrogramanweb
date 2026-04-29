@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Rental Premium</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>CarRental</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#cars">Cars</a>
+        <a href="#history">Booking</a>
+        <a href="#contact">Contact</a>
+        <button onclick="toggleDarkMode()">🌙</button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Find Your Perfect Ride</h1>
+    <p>Easy, Fast, and Affordable Car Rental</p>
+</div>
+
+<!-- SEARCH -->
+<div id="search">
+    <div class="form-container">
+        <div class="form-group">
+            <label>Location</label>
+            <select>
+                <option>Yogyakarta</option>
+                <option>Timika</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Start Date</label>
+            <input type="date" id="startDate">
+        </div>
+        <div class="form-group">
+            <label>End Date</label>
+            <input type="date" id="endDate">
+        </div>
+        <button onclick="searchCar()">Search</button>
+    </div>
+</div>
+
+<!-- CAR LIST -->
+<div class="car-list" id="cars">
+    <h2>Available Cars</h2>
+    <div class="car-grid" id="carGrid"></div>
+</div>
+
+<!-- BOOKING HISTORY -->
+<div class="history" id="history">
+    <h2>Booking History</h2>
+    <ul id="historyList"></ul>
+</div>
+
+<!-- FEATURES -->
+<div class="features">
+    <h2>Why Choose Us?</h2>
+    <p>✔ Affordable Prices</p>
+    <p>✔ Well-maintained Cars</p>
+    <p>✔ Fast Online Booking</p>
+</div>
+
+<!-- CONTACT / FOOTER -->
+<footer id="contact">
+    <h3>Contact Us</h3>
+
+    <p>Email: amien5325@email.com</p>
+
+    <p>
+        WhatsApp:
+        <a href="https://wa.me/6281229772119?text=Halo%20saya%20ingin%20sewa%20mobil" target="_blank">
+            Chat via WhatsApp
+        </a>
+    </p>
+
+    <p>© 2026 Car Rental | Yogyakarta</p>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="bookingModal">
+    <div class="modal-content">
+        <h3>Booking</h3>
+        <p id="carName"></p>
+        <input type="text" id="userName" placeholder="Your Name"><br><br>
+        <button onclick="confirmBooking()">Confirm</button>
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
