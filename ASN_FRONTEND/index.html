@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bengkel Motor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Motorcycle Services</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#motorcycle">Motorcycles</a>
+        <a href="#history">Booking</a>
+        <a href="#contact">Contact</a>
+        <button onclick="toggleDarkMode()">🌙</button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Motorcycle Services</h1>
+    <p>Fast and Reliable Motorcycle Service</p>
+</div>
+
+<!-- SEARCH -->
+<div id="search">
+    <div class="form-container">
+        <div class="form-group">
+            <label>Location</label>
+            <select>
+                <option>Yogyakarta</option>
+                <option>Bantul</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Start Date</label>
+            <input type="date" id="startDate">
+        </div>
+        <div class="form-group">
+            <label>End Date</label>
+            <input type="date" id="endDate">
+        </div>
+        <button onclick="searchService()">Search</button>
+    </div>
+</div>
+
+<!-- MOTORCYCLE LIST -->
+<div class="motorcycle-list" id="motorcycle">
+    <h2>Available Motorcycles</h2>
+    <div class="car-grid" id="motorcycleGrid"></div>
+</div>
+
+<!-- BOOKING HISTORY -->
+<div class="history" id="history">
+    <h2>Booking History</h2>
+    <ul id="historyList"></ul>
+</div>
+
+<!-- FEATURES -->
+<div class="features">
+    <h2>Why Choose Us?</h2>
+    <p>✔ Ganti Oli</p>
+    <p>✔ Services Ringan</p>
+    <p>✔ Services Komplit</p>
+</div>
+
+<!-- CONTACT / FOOTER -->
+<footer id="contact">
+    <h3>Contact Us</h3>
+
+    <p>Email: amien5325@email.com</p>
+
+    <p>
+        WhatsApp:
+        <a href="https://wa.me/6281229772119?text=Halo%20saya%20ingin%20sewa%20mobil" target="_blank">
+            Chat via WhatsApp
+        </a>
+    </p>
+
+    <p>© 2026 Motorcycle Services | Yogyakarta</p>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="bookingModal">
+    <div class="modal-content">
+        <h3>Booking</h3>
+        <p id="serviceName"></p>
+        <input type="text" id="userName" placeholder="Your Name"><br><br>
+        <button onclick="confirmBooking()">Confirm</button>
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
