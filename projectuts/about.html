@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – Muhammad Aminuddin</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">MA.</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <h1>About <span>Me</span></h1>
+      <p>Get to know more about who I am and what I do</p>
+    </section>
+
+    <!-- ABOUT CONTENT -->
+    <section class="section about-content">
+      <div class="about-grid">
+        <div class="about-img-col">
+          <div class="about-img-frame">
+            <img src="img/img1.jpg"" alt="Muhammad Aminuddin"
+              onerror="this.style.background='#2e4a3e';this.style.width='100%';this.style.height='100%';this.removeAttribute('src')" />
+          </div>
+          <div class="about-badge">
+            <span class="badge-num">Skills 3+</span>
+            <span class="badge-text">Data Entry & Annotation<br>Web Development<br>Text Analysis<br>Data Visualization</span>
+          </div>
+        </div>
+
+        <div class="about-text-col">
+          <p class="about-tag">Who Am I?</p>
+          <h2>A passionate Informatics student from Yogyakarta</h2>
+          <p class="about-desc">Saya adalah mahasiswa Program Studi Informatika di Universitas Mercu Buana Yogyakarta. Saya memiliki ketertarikan yang kuat di bidang data science, web development, dan machine learning.</p>
+          <p class="about-desc">Selain belajar di kampus, saya aktif mengembangkan keterampilan melalui proyek-proyek pribadi dan freelance, khususnya dalam bidang data entry, data annotation, dan text analysis.</p>
+
+          <div class="skills-grid">
+            <div class="skill-item">
+              <span class="skill-name">HTML &amp; CSS</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Data Analysis</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="section services">
+      <h2 class="section-title">What I Do</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <h3>Web Development</h3>
+          <p>Membangun website yang responsif, bersih, dan fungsional menggunakan HTML, CSS, dan JavaScript.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <h3>Data Entry &amp; Annotation</h3>
+          <p>Pengolahan data secara teliti dengan standar kualitas tinggi untuk kebutuhan research dan Machie Learning.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <h3>Text Analysis</h3>
+          <p>Analisis teks dan konten menggunakan teknik NLP dan statistik dasar.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <h3>Data Visualization</h3>
+          <p>Menyajikan data secara visual yang mudah dipahami menggunakan chart dan infografis.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">MA.</p>
+      <p>&copy; 2026 Muhammad Aminuddin. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

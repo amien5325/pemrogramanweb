@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Aminuddin – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">MA.</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hero-tag">Data Specialist &amp; Web Developer</p>
+        <h1 class="hero-name">Muhammad<br><span>Aminuddin</span></h1>
+        <p class="hero-desc">Transforming raw data into meaningful insight. Building clean, purposeful web experiences.</p>
+        <div class="hero-btns">
+          <a href="about.html" class="btn-primary">About Me</a>
+          <a href="contact.html" class="btn-outline">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-img-wrap">
+        <div class="hero-img-bg"></div>
+        <img src="img/img1.jpg" alt="Muhammad Aminuddin" class="hero-img" onerror="this.style.background='#2e4a3e';this.removeAttribute('src')" />
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects">
+      <h2 class="section-title">My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-icon">📊</div>
+          <h3>Data Entry</h3>
+          <p>Systematic data collection and entry workflows with validation and quality control processes.</p>
+          <span class="tag">Data</span>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">🔏</div>
+          <h3>Data Annotation</h3>
+          <p>Labeling and annotating datasets for machine learning models across various domains.</p>
+          <span class="tag">AI/ML</span>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">📝</div>
+          <h3>Text Analysis</h3>
+          <p>Natural language processing and textual data extraction for research and analytics.</p>
+          <span class="tag">NLP</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="section portfolio">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-overlay">
+            <span>Academic Research</span>
+          </div>
+          <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=500" alt="Campus" onerror="this.parentElement.style.background='#2e4a3e'" />
+        </div>
+        <div class="portfolio-item featured">
+          <div class="portfolio-overlay">
+            <span>Data Engineering</span>
+          </div>
+          <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=500" alt="Coding" onerror="this.parentElement.style.background='#1a3028'" />
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-overlay">
+            <span>Data Analytics</span>
+          </div>
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500" alt="Analytics" onerror="this.parentElement.style.background='#3a5a4e'" />
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-timeline">
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-content">
+            <span class="edu-year">2020 – Sekarang</span>
+            <h3>Universitas Mercu Buana Yogyakarta</h3>
+            <p>S1 Informatika</p>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-content">
+            <span class="edu-year">2014 – 2017</span>
+            <h3>Sekolah Menengah Kejuruan</h3>
+            <p>Rekayasa Perangkat Lunak</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">MA.</p>
+      <p>&copy; 2026 Muhammad Aminuddin. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

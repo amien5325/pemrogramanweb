@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Muhammad Aminuddin</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">MA.</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <h1>Get In <span>Touch</span></h1>
+      <p>Saya terbuka untuk kolaborasi, proyek freelance, atau sekadar ngobrol santai sambil ngopi.</p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section">
+      <div class="contact-grid">
+
+        <!-- INFO -->
+        <div class="contact-info">
+          <h2>Let's Work Together</h2>
+          <p>Punya proyek menarik atau ingin berdiskusi tentang data &amp; teknologi? Jangan ragu untuk menghubungi saya.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <strong>Lokasi</strong>
+                <p>Jl. Soropadan no76, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55283</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <strong>Email</strong>
+                <p>amien5325@email.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div>
+                <strong>WhatsApp</strong>
+                <p>+62 838-4359-5170</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">💼</div>
+              <div>
+                <strong>LinkedIn</strong>
+                <p>www.linkedin.com/in/muhammad-aminuddin-ba7388182/</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-form-wrap">
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subjek</label>
+              <input type="text" id="subject" name="subject" placeholder="Topik pesan Anda" />
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">Kirim Pesan →</button>
+            <p class="form-success" id="successMsg">✅ Pesan terkirim! Saya akan segera membalas.</p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">MA.</p>
+      <p>&copy; 2026 Muhammad Aminuddin. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
